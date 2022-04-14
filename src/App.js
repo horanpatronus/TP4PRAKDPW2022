@@ -156,22 +156,22 @@ function App() {
                     <th scope="col-4">Value</th>
                   </tr>
                   <tr>
-                    <td>Nama</td><td>{ nama }</td>
+                    <th>Nama</th><td>{ nama }</td>
                   </tr>
                   <tr>
-                    <td>Tanggal Lahir</td><td>{ tglLahir }</td>
+                    <th>Tanggal Lahir</th><td>{ tglLahir }</td>
                   </tr>
                   <tr>
-                    <td>Jenis Kelamin</td><td>{ jenisKelamin }</td>
+                    <th>Jenis Kelamin</th><td>{ jenisKelamin }</td>
                   </tr>
                   <tr>
-                    <td>Hobi</td><td>{ userinfo.response }</td>
+                    <th>Hobi</th><td>{ userinfo.response }</td>
                   </tr>
                   <tr>
-                    <td>Agama</td><td>{ agama }</td>
+                    <th>Agama</th><td>{ agama }</td>
                   </tr>
                   <tr>
-                    <td>Pesan</td><td>{ pesan }</td>
+                    <th>Pesan</th><td>{ pesan }</td>
                   </tr>
                 </tbody>
               </Table>
