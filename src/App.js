@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -10,13 +10,12 @@ function App() {
   const [nama, setNama] = useState('');
   const [tglLahir, setTglLahir] = useState('');
   const [jenisKelamin, setJenisKelamin] = useState('');
-  const [agama, setAgama] = useState('');
-  const [pesan, setPesan] = useState('');
-
   const [userinfo, setUserInfo] = useState({
     hobi: [],
     response: [],
   });
+  const [agama, setAgama] = useState('');
+  const [pesan, setPesan] = useState('');
   
   const handleChange = (e) => {
     // Destructuring
@@ -47,13 +46,13 @@ function App() {
 
   return (
     
-    <div className='container'>
-
+  <div className='container'>
+    
+    <form onSubmit={handleSubmit}>
+    
       <div className="header text-center p-3 mt-3">
           <h1>Biodata</h1>
       </div>
-
-      <form onSubmit={ handleSubmit }>
 
         <div className="card-body text-start" >
           <div className="mb-3">
@@ -117,8 +116,7 @@ function App() {
                 <label className="form-check-label" hmtlFor="inlineCheckbox3">Other</label>
               </div>
           </div>
-        
-        
+      
           <div className="mb-0">
             <label hmtlFor="inputAgama" className="form-label mb-1">Agama</label>
           </div>
@@ -145,7 +143,7 @@ function App() {
           </div>
         </div>
 
-        <div className="hasil mb-3" id="show-data" style="display: none;">
+        <div className="hasil mb-3" id="show-data">
           <div className="hasil-body">
             {' '}
             {tabel && 
@@ -178,9 +176,7 @@ function App() {
             }
           </div>
         </div>
-
-      </form>
-
+      </form>        
     </div>
   );
 }
